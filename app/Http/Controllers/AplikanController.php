@@ -56,8 +56,8 @@ class AplikanController extends Controller
                 'nama_proses' => 'taken',
                 'user_id' => $user->id
             ]);
-        \Log::useDailyFiles(storage_path().'/logs/app.log');
-        \Log::info(auth()->user()->username.' successfully take aplikan '.$aplikan->nama.' ('.$aplikan->id.')');
+        // \Log::useDailyFiles(storage_path().'/logs/app.log');
+        // \Log::info(auth()->user()->username.' successfully take aplikan '.$aplikan->nama.' ('.$aplikan->id.')');
         return response()->json(['status' => 'success','aplikan' => $aplikan]);
     }
 
@@ -85,8 +85,8 @@ class AplikanController extends Controller
         $aplikan = Aplikan::find($r->input('aplikan_id'));
         if($aplikan->user_id == \Auth::user()->id){
             $aplikan->followedUpBy()->attach(\Auth::user(),['type' => 'followup','keterangan' => $r->input('keterangan')]);
-            \Log::useDailyFiles(storage_path().'/logs/app.log');
-            \Log::info(auth()->user()->username.' memfollow up aplikan '.$aplikan->nama);
+            // \Log::useDailyFiles(storage_path().'/logs/app.log');
+            // \Log::info(auth()->user()->username.' memfollow up aplikan '.$aplikan->nama);
 
             \App\AplikanTrack::create([
                 'aplikan_id' => $aplikan->id,
@@ -433,8 +433,8 @@ class AplikanController extends Controller
                         ->subject('1 Aplikan baru saja di share untuk kamu ('.$aplikan->nama.')');
             });
 
-        \Log::useDailyFiles(storage_path().'/logs/app.log');
-        \Log::info(auth()->user()->username.' has been successfully given an aplikan '.$aplikan->nama.' ('.$aplikan->id.')');
+        // \Log::useDailyFiles(storage_path().'/logs/app.log');
+        // \Log::info(auth()->user()->username.' has been successfully given an aplikan '.$aplikan->nama.' ('.$aplikan->id.')');
         return response()->json(['status' => 'success','aplikan' => $aplikan]);
     }
 

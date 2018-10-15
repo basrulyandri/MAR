@@ -72,7 +72,7 @@
                                             <div class="feed-activity-list">
                                                 
                                                 <div class="feed-element">
-                                                    <a href="profile.html" class="pull-left">
+                                                    <a class="pull-left">
                                                         <img alt="image" class="img-circle" src="{{url('assets/backend/img')}}/default-80x80.jpg">
                                                     </a>
                                                     <div class="media-body ">

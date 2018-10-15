@@ -134,6 +134,7 @@ class UsersTableSeeder extends Seeder
                         'nama_biaya' => 'Pendaftaran',
                         'nominal' => 300000,
                         'status' => 'dibayar',
+                        'keterangan' => 'pendaftaran',
                         'created_at' => $aplikan->created_at->addDays(rand(8,12))
                     ]); 
 
@@ -147,6 +148,7 @@ class UsersTableSeeder extends Seeder
                         'nama_biaya' => 'Pendaftaran',
                         'nominal' => 300000,
                         'status' => 'dibayar',
+                        'keterangan' => 'pendaftaran',
                         'created_at' => $aplikan->created_at->addDays(rand(8,12))
                     ]);
              $aplikan->trackUser()->attach($aplikan->user_id,['nama_proses' => 'proses pendaftaran']);
@@ -157,6 +159,7 @@ class UsersTableSeeder extends Seeder
                         'nama_biaya' => 'Registrasi',
                         'nominal' => 4500000,
                         'status' => 'dibayar',
+                        'keterangan' => 'registrasi',
                         'created_at' => $aplikan->created_at->addDays(rand(12,15))
                     ]);
              $aplikan->trackUser()->attach($aplikan->user_id,['nama_proses' => 'proses registrasi']);

@@ -17,8 +17,17 @@ class AppMiddleware
     public function handle($request, Closure $next)
     {
         if(getOption('app_is_active') == 0){
-            return new Response(view('inactive'));
+            if(!auth()->check()){
+                if(in_array(\Request::route()->getName(),['auth.login','auth.dologin','auth.logout'])){
+                    return $next($request);
+                }else{
+                    return new Response(view('inactive'));                    
+                }
+            }elseif(!auth()->user()->isAdmin()){
+                return new Response(view('inactive'));                                    
+            }
         }
+
         return $next($request);
     }
 }

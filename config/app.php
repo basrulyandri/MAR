@@ -177,12 +177,12 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        Collective\Html\HtmlServiceProvider::class,
-        UniSharp\LaravelFilemanager\LaravelFilemanagerServiceProvider::class,
-        Intervention\Image\ImageServiceProvider::class,
-        Cviebrock\EloquentSluggable\ServiceProvider::class,
-        Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
-        Harimayco\Menu\MenuServiceProvider::class        
+        // Collective\Html\HtmlServiceProvider::class,
+        // UniSharp\LaravelFilemanager\LaravelFilemanagerServiceProvider::class,
+        // Intervention\Image\ImageServiceProvider::class,
+        // Cviebrock\EloquentSluggable\ServiceProvider::class,
+        // Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
+        // Harimayco\Menu\MenuServiceProvider::class        
 
     ],
 

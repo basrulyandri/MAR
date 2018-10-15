@@ -11,6 +11,7 @@
 |
 */
 
+
 Route::group(['middleware' => 'app'],function(){
 
 	Route::get('/test',function(){
