@@ -407,6 +407,21 @@ Route::group(['middleware' => 'app'],function(){
 				'uses' => 'SettingController@mailing',
 				'as' => 'setting.mailing',
 			]);
+
+		Route::get('setting/database', [
+				'uses' => 'SettingController@database',
+				'as' => 'setting.database',
+			]);
+
+		Route::get('setting/database/reset', [
+				'uses' => 'SettingController@databasereset',
+				'as' => 'setting.database.reset',
+			]);
+
+		Route::post('setting/database/install', [
+				'uses' => 'SettingController@databaseinstall',
+				'as' => 'setting.database.install',
+			]);
 		
 	});
 

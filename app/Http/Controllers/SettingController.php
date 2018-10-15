@@ -27,4 +27,25 @@ class SettingController extends Controller
         //dd($list_user_notifikasi_dowload_brosur);
         return view('settings.mailing',compact('list_user_notifikasi_dowload_brosur'));
     }
+
+    public function database()
+    {
+        return view('settings.database');
+    }
+
+    public function databasereset()
+    {
+        \App\Aplikan::truncate();
+        \App\AplikanTrack::truncate();
+        \App\Followup::truncate();
+        \App\Tagihan::truncate();
+        \App\Pembayaran::truncate();
+
+        return redirect()->back()->with('success','Database berhasil di reset');
+    }
+
+    public function databaseinstall(Request $request)
+    {
+        \Artisan::call('db:seed',['--class' => 'UsersTableSeeder']);
+    }
 }

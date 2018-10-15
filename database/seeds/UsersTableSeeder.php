@@ -16,7 +16,9 @@ class UsersTableSeeder extends Seeder
     	$this->aplikan($faker);  	
     	$this->aplikanTrack();      
     	$this->followup($faker);  
-    }
+        $this->tagihan();
+        $this->pembayaran();
+    }    
 
     public function aplikan($faker)
     {
@@ -24,7 +26,7 @@ class UsersTableSeeder extends Seeder
 
     	$array_sekolah = ['SMA Mangga Besar','SMA Muhammadiyah 13','SMA Muhammadiyah 15','SMA Muhammadiyah 2','SMA Mutiara Bangsa 3','SMA Notre Dame','SMA Nasional Nusantara','SMA Panindi','SMA PGRI 11','SMA PGRI 21','SMA PGRI 8','SMA Providentia','SMA Putra Negara','SMA Putra Nusa','SMA Pelita 2','SMA Abdi Siswa','SMA Pelita Kudus','SMA Petra','SMA Rasa Sayang'];
 
-		$begin = new DateTime('2018-06-06');
+		$begin = new DateTime('2018-05-20');
 		$end = new DateTime('2018-07-04');
 
 		$interval = DateInterval::createFromDateString('1 day');
@@ -100,7 +102,7 @@ class UsersTableSeeder extends Seeder
     {
     	foreach(\App\Aplikan::all() as $aplikan){
     		if($aplikan->tanggal_take){
-    			$numberOfFollowUp = rand(2,8);
+    			$numberOfFollowUp = rand(2,12);
     			for ($i=0; $i < $numberOfFollowUp; $i++) {     				
 	    			App\Followup::create([
 	    					'aplikan_id' => $aplikan->id,
@@ -120,6 +122,60 @@ class UsersTableSeeder extends Seeder
     			}
     		}
     	}
+    }
+
+    public function tagihan()
+    {
+        foreach(\App\Aplikan::all() as $aplikan){
+            if($aplikan->aplikan_status_id == 3){
+                \App\Tagihan::create([
+                        'object_id' => $aplikan->id,
+                        'object_name' => 'aplikan',
+                        'nama_biaya' => 'Pendaftaran',
+                        'nominal' => 300000,
+                        'status' => 'dibayar',
+                        'created_at' => $aplikan->created_at->addDays(rand(8,12))
+                    ]); 
+
+                    $aplikan->trackUser()->attach($aplikan->user_id,['nama_proses' => 'proses pendaftaran']);               
+            }
+
+            if($aplikan->aplikan_status_id == 4){
+                \App\Tagihan::create([
+                        'object_id' => $aplikan->id,
+                        'object_name' => 'aplikan',
+                        'nama_biaya' => 'Pendaftaran',
+                        'nominal' => 300000,
+                        'status' => 'dibayar',
+                        'created_at' => $aplikan->created_at->addDays(rand(8,12))
+                    ]);
+             $aplikan->trackUser()->attach($aplikan->user_id,['nama_proses' => 'proses pendaftaran']);
+
+                \App\Tagihan::create([
+                        'object_id' => $aplikan->id,
+                        'object_name' => 'aplikan',
+                        'nama_biaya' => 'Registrasi',
+                        'nominal' => 4500000,
+                        'status' => 'dibayar',
+                        'created_at' => $aplikan->created_at->addDays(rand(12,15))
+                    ]);
+             $aplikan->trackUser()->attach($aplikan->user_id,['nama_proses' => 'proses registrasi']);
+
+            }
+        }
+    }
+
+    public function pembayaran()
+    {
+        foreach(\App\Tagihan::all() as $tagihan){
+            \App\Pembayaran::create([
+                    'user_id' => \App\User::whereRoleId(4)->first()->id,
+                    'no_bukti_bayar' => str_random(9),
+                    'tgl_bayar' => $tagihan->created_at->format('Y-m-d'),
+                    'nominal' => $tagihan->nominal,
+                    'pembayaran_via_id' => 1,
+                ]);
+        }
     }
 
     function array_random($array, $number = null)

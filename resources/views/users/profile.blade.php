@@ -47,6 +47,7 @@
                             <div class="ibox-content profile-content">
                                 <h4><strong>{{$user->getNameOrEmail(true)}}</strong></h4>
                                 <p>{{$user->role->name}}</p>
+                                <p>{{$user->email}}</p>
                                 <h5>
                                     About me
                                 </h5>
