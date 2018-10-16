@@ -7,63 +7,64 @@
         <div class="inner-banner-gradient">
           <div class="row">
             <div class="col-md-6 col-sm-12 col-xs-12">
-              <div class="item-banner-gradient gradient-leading gradient-green">
+              <div class="item-banner-gradient gradient-black">
                 <a href="#" class="gradient-arrow"><span class="lnr lnr-arrow-right"></span></a>
                 <div class="banner-gradient-thumb">
-                  <a href="#"><img src="{{asset('assets/frontend/')}}/images/home7/bn1.jpg" alt="" /></a>
+                  <a href="#"><img src="{{asset('assets/frontend/')}}/images/fransisca.jpg" alt="" /></a>
                 </div>
                 <div class="banner-gradient-info">
-                  <a href="#" class="postcat">travel</a>
-                  <h3 class="post-title"><a href="#">Nexus 6 release date borem ipsum dolor sit amet, consecte tur adipiscing elit</a></h3>
-                  <p class="desc">Recently we opened oin division and specifically designed for consulting  companies. It consists entirely </p>
+                  <a href="#" class="postcat">Inspirasi</a>
+                  <h3 class="post-title"><a href="#">Mungkinkah kamu sukses di usia muda ?</a></h3>
+                  <p class="desc">Jaman Ibu Bapak kita dulu, usia itu menentukan bisa atau tidaknya kita sukses. Karena hanya yang berusia matang saja (35-40 tahun) yang didengar idenya dan omongannya oleh perusahaan </p>
                 </div>
               </div>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="item-banner-gradient gradient-pink">
+              <div class="item-banner-gradient gradient-black">
                 <a href="#" class="gradient-arrow"><span class="lnr lnr-arrow-right"></span></a>
                 <div class="banner-gradient-thumb">
-                  <a href="#"><img src="{{asset('assets/frontend/')}}/images/home7/bn2.jpg" alt="" /></a>
+                  <a href="#"><img src="{{asset('assets/frontend/')}}/images/goodtogreat.jpg" alt="" /></a>
                 </div>
                 <div class="banner-gradient-info">
-                  <a href="#" class="postcat">sport</a>
-                  <h3 class="post-title"><a href="#">Nexus 6 release date borem ipsum dolor sit </a></h3>
-                  <p class="desc">Recently we opened oin division and specifically designed for consulting  companies. It consists entirely </p>
+                  <a href="#" class="postcat">Pengetahuan</a>
+                  <h3 class="post-title"><a href="#">Baik itu, Musuhnya hebat </a></h3>
+                  <p class="desc">Kami punya cerita buat kamu tentang Jojo seorang pendaki gunung.
+Jojo punya keinginan untuk berkemah di alam terbuka dengan pemandangan yang indah. Wow, pasti nikmat sekali rasanya, begitu gumamnya dalam hati </p>
                 </div>
               </div>
-              <div class="item-banner-gradient gradient-blue">
+              <div class="item-banner-gradient gradient-black">
                 <a href="#" class="gradient-arrow"><span class="lnr lnr-arrow-right"></span></a>
                 <div class="banner-gradient-thumb">
-                  <a href="#"><img src="{{asset('assets/frontend/')}}/images/home7/bn3.jpg" alt="" /></a>
+                  <a href="#"><img src="{{asset('assets/frontend/')}}/images/minimfaedah.jpg" alt="" /></a>
                 </div>
                 <div class="banner-gradient-info">
-                  <a href="#" class="postcat">entertainment</a>
-                  <h3 class="post-title"><a href="#">Nexus 6 release date borem ipsum dolor sit </a></h3>
-                  <p class="desc">Recently we opened oin division and specifically designed for consulting  companies. It consists entirely </p>
+                  <a href="#" class="postcat">Hiburan</a>
+                  <h3 class="post-title"><a href="#">Minim Faedah, 5 Kebiasaan Buruk Pelajar SMA Ini Banyak Dilakuin Deh! </a></h3>
+                  <p class="desc">Nggak tahu kenapa, pas jadi warga Sekolah Menengah Atas (SMA) dan sederajatnya, ada aja kebiasan baru yang dilakuin teman-teman. </p>
                 </div>
               </div>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="item-banner-gradient gradient-violet">
+              <div class="item-banner-gradient gradient-black">
                 <a href="#" class="gradient-arrow"><span class="lnr lnr-arrow-right"></span></a>
                 <div class="banner-gradient-thumb">
-                  <a href="#"><img src="{{asset('assets/frontend/')}}/images/home7/bn4.jpg" alt="" /></a>
+                  <a href="#"><img src="{{asset('assets/frontend/')}}/images/lll.jpg" alt="" /></a>
                 </div>
                 <div class="banner-gradient-info">
-                  <a href="#" class="postcat">Technology</a>
-                  <h3 class="post-title"><a href="#">Nexus 6 release date borem ipsum dolor sit </a></h3>
-                  <p class="desc">Recently we opened oin division and specifically designed for consulting  companies. It consists entirely </p>
+                  <a href="#" class="postcat">Info</a>
+                  <h3 class="post-title"><a href="#">Cara LP3I supaya kamu kerja secepatnya setelah lulus</a></h3>
+                  <p class="desc">Tahukah kamu, Bahwa LP3I membentuk divisi khusus Penempatan Kerja untuk membantu kamu supaya bisa cepat bekerja setelah lulus.</p>
                 </div>
               </div>
-              <div class="item-banner-gradient gradient-orange">
+              <div class="item-banner-gradient gradient-black">
                 <a href="#" class="gradient-arrow"><span class="lnr lnr-arrow-right"></span></a>
                 <div class="banner-gradient-thumb">
-                  <a href="#"><img src="{{asset('assets/frontend/')}}/images/home7/bn5.jpg" alt="" /></a>
+                  <a href="#"><img src="{{asset('assets/frontend/')}}/images/avengers.jpg" alt="" /></a>
                 </div>
                 <div class="banner-gradient-info">
-                  <a href="#" class="postcat">travel</a>
-                  <h3 class="post-title"><a href="#">Nexus 6 release date borem ipsum dolor sit </a></h3>
-                  <p class="desc">Recently we opened oin division and specifically designed for consulting  companies. It consists entirely </p>
+                  <a href="#" class="postcat">Hiburan</a>
+                  <h3 class="post-title"><a href="#">Avengers 4 Selesai Shooting, Sutradara Posting Gambar Misterius </a></h3>
+                  <p class="desc"> Film Avengers 4 akhirnya telah resmi menyelesaikan proses shooting. Hal ini dikonfirmasi langsung oleh kedua sutradara, Anthony dan Joe Russo, lewat akun Twitter @Russo_Brothers pada 12 Oktober lalu </p>
                 </div>
               </div>
             </div>
@@ -77,9 +78,9 @@
         <div class="row">
           <div class="col-md-3 col-sm-12 col-sm-12">
             <div class="event-current-intro">
-              <span>curent </span>
+              <span>Info </span>
               <strong>events</strong>
-              <p>Monday, January 20, 2016</p>
+              <p></p>
             </div>
           </div>
           <div class="col-md-3 col-sm-4 col-sm-12">
@@ -89,11 +90,11 @@
                   <span class="lnr lnr-clock"></span>
                 </div>
                 <div class="item-event-info">
-                  <span class="date-time">9h:30 - 11h:30</span>
-                  <h3><a href="#">Wordpress theme of 7up on Themeforest</a></h3>
+                  <span class="date-time">15 Oktober 2018</span>
+                  <h3><a href="#">Pensi Milenia</a></h3>
                 </div>
               </div>
-              <a href="#" class="find-ticket">find ticket</a>
+              <a href="#" class="find-ticket">Lihat</a>
             </div>
           </div>
           <div class="col-md-3 col-sm-4 col-sm-12">
@@ -103,11 +104,11 @@
                   <span class="lnr lnr-clock"></span>
                 </div>
                 <div class="item-event-info">
-                  <span class="date-time">13h:30 - 15h:00</span>
-                  <h3><a href="#">PSD theme of 7up on Themefo Design by: Bjnhthjenh@</a></h3>
+                  <span class="date-time">20 Oktober 2018</span>
+                  <h3><a href="#">Stand up Comedy contest</a></h3>
                 </div>
               </div>
-              <a href="#" class="find-ticket">find ticket</a>
+              <a href="#" class="find-ticket">Lihat</a>
             </div>
           </div>
           <div class="col-md-3 col-sm-4 col-sm-12">
@@ -117,11 +118,11 @@
                   <span class="lnr lnr-clock"></span>
                 </div>
                 <div class="item-event-info">
-                  <span class="date-time">15h:30 - 18h:30</span>
-                  <h3><a href="#">Diam noimy euismod tincirdeo urtanes laoreet dolore </a></h3>
+                  <span class="date-time">1 November 2018</span>
+                  <h3><a href="#">Workshop animasi</a></h3>
                 </div>
               </div>
-              <a href="#" class="find-ticket">find ticket</a>
+              <a href="#" class="find-ticket">Lihat</a>
             </div>
           </div>
         </div>
@@ -132,60 +133,60 @@
       <div class="container">
         <div class="inner-latest-post-bx-slider">
           <div class="intro-bx-latest-post">
-            <label>New Day</label>
-            <h2>latest post</h2>
-            <a href="#">View All</a>
+            <label>luluslangsunglaku.id</label>
+            <h2>Terbaru</h2>
+            <a href="#">Lihat semua</a>
           </div>
           <div class="content-bx-latest-post">
             <div class="item-bx-latest-post">
               <div class="bx-latest-post-thumb">
-                <a href="#"><img src="{{asset('assets/frontend/')}}/images/home7/lat1.jpg" alt="" /></a>
+                <a href="#"><img src="{{asset('assets/frontend/')}}/images/fransisca2.jpg" alt="" /></a>
               </div>
               <div class="bx-latest-post-info">
-                <a href="#" class="postcat">Sport</a>
-                <h3><a href="#">Peinistrator General in acre poenes opakcha</a></h3>
+                <a href="#" class="postcat">Inspirasi</a>
+                <h3><a href="#">Mungkinkah kamu sukses di usia muda ?</a></h3>
                 <ul>
-                  <li><span class="lnr lnr-clock"></span> 2 hours ago</li>
+                  <li><span class="lnr lnr-clock"></span> 2 Jam lalu</li>
                   <li><span class="lnr lnr-bubble"></span> 6</li>
                 </ul>
               </div>
             </div>
             <div class="item-bx-latest-post">
               <div class="bx-latest-post-thumb">
-                <a href="#"><img src="{{asset('assets/frontend/')}}/images/home7/lat2.jpg" alt="" /></a>
+                <a href="#"><img src="{{asset('assets/frontend/')}}/images/goodtogreat2.jpg" alt="" /></a>
               </div>
               <div class="bx-latest-post-info">
-                <a href="#" class="postcat">technology</a>
-                <h3><a href="#">Internet tend to repeat pre defined oneciting</a></h3>
+                <a href="#" class="postcat">Pengetahuan</a>
+                <h3><a href="#">Baik itu, Musuhnya hebat</a></h3>
                 <ul>
-                  <li><span class="lnr lnr-clock"></span> 2 hours ago</li>
-                  <li><span class="lnr lnr-bubble"></span> 6</li>
+                  <li><span class="lnr lnr-clock"></span> 13 jam lalu</li>
+                  <li><span class="lnr lnr-bubble"></span> 9</li>
                 </ul>
               </div>
             </div>
             <div class="item-bx-latest-post">
               <div class="bx-latest-post-thumb">
-                <a href="#"><img src="{{asset('assets/frontend/')}}/images/home7/lat3.jpg" alt="" /></a>
+                <a href="#"><img src="{{asset('assets/frontend/')}}/images/lll4.jpg" alt="" /></a>
               </div>
               <div class="bx-latest-post-info">
-                <a href="#" class="postcat">travel</a>
-                <h3><a href="#">reproduced below for those interested in cola</a></h3>
+                <a href="#" class="postcat">Info</a>
+                <h3><a href="#">Tiket masa depan</a></h3>
                 <ul>
-                  <li><span class="lnr lnr-clock"></span> 2 hours ago</li>
-                  <li><span class="lnr lnr-bubble"></span> 6</li>
+                  <li></li>
+                  <li></li>
                 </ul>
               </div>
             </div>
             <div class="item-bx-latest-post">
               <div class="bx-latest-post-thumb">
-                <a href="#"><img src="{{asset('assets/frontend/')}}/images/home7/lat1.jpg" alt="" /></a>
+                <a href="#"><img src="{{asset('assets/frontend/')}}/images/avengers2.jpg" alt="" /></a>
               </div>
               <div class="bx-latest-post-info">
-                <a href="#" class="postcat">business</a>
-                <h3><a href="#">tor General in acre poenes opakcha</a></h3>
+                <a href="#" class="postcat">Hiburan</a>
+                <h3><a href="#">Avengers 4 Selesai Shooting, Sutradara Posting Gambar Misterius</a></h3>
                 <ul>
-                  <li><span class="lnr lnr-clock"></span> 2 hours ago</li>
-                  <li><span class="lnr lnr-bubble"></span> 6</li>
+                  <li><span class="lnr lnr-clock"></span> 1 hari ago</li>
+                  <li><span class="lnr lnr-bubble"></span> 17</li>
                 </ul>
               </div>
             </div>

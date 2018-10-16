@@ -4742,7 +4742,7 @@ ul.product-list,ul.product-grid {
     background: #06377b none repeat scroll 0 0;
 }
 .header-timer {
-    color: #777;
+    color: #ccc;
     margin-top: 30px;
     padding-left: 20px;
 }
@@ -4759,7 +4759,7 @@ ul.product-list,ul.product-grid {
     text-align: left;
 }
 .social-header-7 > a {
-    color: #777;
+    color: #f2cd02;
     display: inline-block;
     margin-right: 25px;
 }
@@ -4922,6 +4922,11 @@ ul.product-list,ul.product-grid {
 .gradient-orange::before {
     background: linear-gradient(transparent, #ff9600);
 }
+
+.gradient-black::before {
+    background: linear-gradient(transparent, #353535);
+}
+
 .event-current {
     background: #4359c3 none repeat scroll 0 0;
 }
@@ -5035,7 +5040,7 @@ ul.product-list,ul.product-grid {
 }
 .intro-bx-latest-post > label ,.intro-bx-latest-post > a{
     color: #777;
-    font-size: 16px;
+    font-size: 14px;
     font-style: italic;
     font-weight: 400;
     text-transform: uppercase;

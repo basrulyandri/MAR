@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Index 7</title>
+  <title>Lulus Langsung Laku | Portal anak sekolah</title>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="{{asset('assets/frontend/css/font-awesome.min.css')}}"/>
   <link rel="stylesheet" type="text/css" href="{{asset('assets/frontend/css/font-linearicons.css')}}"/>
@@ -27,7 +27,7 @@
         <div class="row">
           <div class="col-md-2 col-sm-2 col-xs-4">
             <div class="logo-7">
-              <a href="#"><img src="{{asset('assets/frontend/')}}/images/logo.jpg" alt="" /></a>
+              <a href="#"><img src="{{asset('assets/frontend/')}}/images/logo-putih-kuning.jpg" alt="" /></a>
             </div>
           </div>
           <div class="col-md-10 col-sm-10 col-xs-8">
@@ -40,7 +40,7 @@
                   <div class="social-header-7">
                     <a href="#"><i class="fa fa-twitter"></i></a>
                     <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
                   </div>
                   <div class="search-form-7">
                     <form>
@@ -710,7 +710,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-5 col-sm-5 col-xs-12">
-            <div class="logo-footer7"><a href="#">new<span>day</span>.com</a></div>
+            <div class="logo-footer7"><a href="#">lulus<span>langsunglaku</span>.id</a></div>
           </div>
           <div class="col-md-7 col-sm-7 col-xs-12">
             <div class="social-footer7">
