@@ -1,5 +1,16 @@
 @extends('layouts.frontend.master')
+@section('og')
+    <meta property="og:type" content="website" /> 
+    <meta property="og:title" content="{{getOption('site_title')}}" />
+    <meta property="og:description" content="{{getOption('site_description')}}" />
+    <meta property="og:image" content="{{url('/')}}{{getOption('site_og_image')}}" />
+    <meta property="title" content="{{getOption('site_title')}}" />
+    <meta name="description" content="{{getOption('site_description')}}" />
+@stop
 
+@section('title')
+{{getOption('site_title')}} | {{getOption('site_description')}}
+@stop
 @section('content')
 <div id="content">
     <div class="banner-gradient">

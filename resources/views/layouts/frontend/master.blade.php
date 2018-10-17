@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Lulus Langsung Laku | Portal anak sekolah</title>
+  @yield('og')
+  <title>@yield('title')</title>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="{{asset('assets/frontend/css/font-awesome.min.css')}}"/>
   <link rel="stylesheet" type="text/css" href="{{asset('assets/frontend/css/font-linearicons.css')}}"/>
@@ -27,7 +28,7 @@
         <div class="row">
           <div class="col-md-2 col-sm-2 col-xs-4">
             <div class="logo-7">
-              <a href="#"><img src="{{asset('assets/frontend/')}}/images/logo-putih-kuning.jpg" alt="" /></a>
+              <a href="{{route('page.index')}}"><img src="{{asset('assets/frontend/')}}/images/logo-putih-kuning.jpg" alt="" /></a>
             </div>
           </div>
           <div class="col-md-10 col-sm-10 col-xs-8">
@@ -57,7 +58,7 @@
             <nav class="main-nav main-nav-7">
               <ul class="main-menu">
                 
-                <li><a href="#">Home</a></li>
+                <li><a href="{{route('page.index')}}">Home</a></li>
                 <li class="has-mega-menu">
                   <a href="#">Teknologi</a>
                   <div class="mega-menu">
@@ -602,7 +603,7 @@
                 <li><a href="#">Musik </a></li>
                 <li><a href="#">Pengetahuan</a></li>
                 <li><a href="#">Event</a></li>
-                <li><a href="#">Hiburan</a></li>
+                <li><a href="#">Daftar</a></li>
               </ul>
               <div class="mobile-menu">
                 <span class="mobile-menu-text">Menu</span>

@@ -23,7 +23,12 @@ class PagesController extends Controller
 			//\Cookie::queue('sin', $request->sin, time() + (86400 * 30));		
 		}			
 		return view('pages.index');
-	}	
+	}
+
+	public function downloadbrosur()
+	{
+		return view('pages.downloadbrosur');
+	}
 
 	public function postdownloadbrosur(Request $request)
 	{		
@@ -69,7 +74,7 @@ class PagesController extends Controller
 
 	public function single($slug)
 	{
-		$post = Post::whereSlug($slug)->first();
+		$post = Post::whereSlug($slug)->with('user')->first();
 		if(!$post){
 			return view('errors.404');
 		}
