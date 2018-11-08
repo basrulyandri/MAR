@@ -55,6 +55,7 @@ class Kernel extends HttpKernel
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'rbac' => \App\Http\Middleware\RbacMiddleware::class,
+        'refferal' => \App\Http\Middleware\RefferalMiddleware::class,
         'app' => \App\Http\Middleware\AppMiddleware::class,
         'can-manage-aplikan' => \App\Http\Middleware\CanManageAplikanMiddleware::class,
         'jwt.auth' => \Tymon\JWTAuth\Middleware\GetUserFromToken::class,

@@ -603,7 +603,7 @@
                 <li><a href="#">Musik </a></li>
                 <li><a href="#">Pengetahuan</a></li>
                 <li><a href="#">Event</a></li>
-                <li><a href="#">Daftar</a></li>
+                <li><a href="{{route('page.download.brosur')}}">Daftar</a></li>
               </ul>
               <div class="mobile-menu">
                 <span class="mobile-menu-text">Menu</span>

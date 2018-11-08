@@ -12,16 +12,16 @@ class PagesController extends Controller
 {
 	public function index(Request $request)
 	{
-		//\Cookie::get('sin');
-		if($request->has('psr')){
-			return response()->view('pages.index')->cookie('psr', $request->psr, time() + (86400 * 30));
-			//\Cookie::queue('psr', $request->psr, time() + (86400 * 30));		
-		}
+		dd(\Cookie::get('sin'));
+		// if($request->has('psr')){
+		// 	return response()->view('pages.index')->cookie('psr', $request->psr, time() + (86400 * 30));
+		// 	//\Cookie::queue('psr', $request->psr, time() + (86400 * 30));		
+		// }
 
-		if($request->has('sin')){
-			return response()->view('pages.index')->cookie('sin', $request->sin, time() + (86400 * 30));
-			//\Cookie::queue('sin', $request->sin, time() + (86400 * 30));		
-		}			
+		// if($request->has('sin')){
+		// 	return response()->view('pages.index')->cookie('sin', $request->sin, time() + (86400 * 30));
+		// 	//\Cookie::queue('sin', $request->sin, time() + (86400 * 30));		
+		// }			
 		return view('pages.index');
 	}
 
